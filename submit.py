@@ -23,4 +23,6 @@ if __name__=='__main__':
   # Set up the connection
   uname, pword = get_credentials()
   jc = LAConnection(uname, pword)
+  if jc.is_connected():
+    jc.upload_code('2997', '/home/apnorton/git/icpc-solutions/worlds-2004/E/Main.java')
 
